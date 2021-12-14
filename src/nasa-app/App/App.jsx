@@ -7,7 +7,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 
 function App() {
   const location = useLocation();
-  const atChild = location.pathname !== "/" ? true : false;
+  const atChild = location.pathname !== "/nasaUIApp" ? true : false;
   return (
     <Wrapper>
       <LeftColumn atChild={atChild}>

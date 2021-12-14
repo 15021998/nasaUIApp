@@ -14,9 +14,9 @@ const Sidebar = () => {
         />
         <Title>NeoWs</Title>
       </ProfileWrapper>
-      <NavLink to={`/neo-browse-api`}>Neo Browse API</NavLink>
-      <NavLink to={`/neo-lookup-api`}>Neo Lookup API</NavLink>
-      <NavLink to={`/neo-feed-api`}>Neo Feed API</NavLink>
+      <NavLink to={`/nasaUIApp/neo-browse-api`}>Neo Browse API</NavLink>
+      <NavLink to={`/nasaUIApp/neo-lookup-api`}>Neo Lookup API</NavLink>
+      <NavLink to={`/nasaUIApp/neo-feed-api`}>Neo Feed API</NavLink>
     </Wrapper>
   );
 };

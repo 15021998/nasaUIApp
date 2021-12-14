@@ -18,16 +18,17 @@ const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<App />}>
+      <Route path="/" element={<App />} />
+        <Route path="/nasaUIApp" element={<App />}>
           {!isMobileDevice && (
             <Route
-              path="/"
-              element={<Navigate replace to="/neo-browse-api" />}
+              path="/nasaUIApp"
+              element={<Navigate replace to="/nasaUIApp/neo-browse-api" />}
             />
           )}
-          <Route path="/neo-browse-api" element={<NeoBrowseApiPage />} />
-          <Route path="/neo-lookup-api" element={<NeoLookupApiPage />} />
-          <Route path="/neo-feed-api" element={<NeoFeedApiPage />} />
+          <Route path="/nasaUIApp/neo-browse-api" element={<NeoBrowseApiPage />} />
+          <Route path="/nasaUIApp/neo-lookup-api" element={<NeoLookupApiPage />} />
+          <Route path="/nasaUIApp/neo-feed-api" element={<NeoFeedApiPage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
